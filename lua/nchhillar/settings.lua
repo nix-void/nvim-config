@@ -12,6 +12,7 @@ vim.o.scrolloff = 8
 vim.opt.completeopt = { 'noinsert', 'menuone', 'noselect' }
 vim.o.wildmenu = true
 vim.o.title = true
+vim.o.cursorline = true
 
 vim.cmd('colorscheme rose-pine')
 vim.cmd('highlight Normal guibg=#000000')
