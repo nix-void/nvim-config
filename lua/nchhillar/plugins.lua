@@ -24,4 +24,6 @@ return require('packer').startup(function(use)
     use('vim-airline/vim-airline')
     use({'neoclide/coc.nvim', branch = 'release'})
     use({'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'})
+    use({ 'echasnovski/mini.icons', version = '*' })
+    use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
 end)

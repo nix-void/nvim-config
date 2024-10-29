@@ -29,3 +29,14 @@ vim.cmd([[
   autocmd BufRead,BufNewFile *.ejs set filetype=html
   autocmd BufRead,BufNewFile *.jsp set filetype=html
 ]])
+
+-- Auto close the initial "No Name" buffer if another buffer is opened
+vim.api.nvim_create_autocmd('BufEnter', {
+    pattern = '*',
+    callback = function()
+        if vim.fn.bufname() == '' and vim.fn.bufnr('$') > 1 then
+            vim.cmd('bdelete')
+        end
+    end,
+})
+

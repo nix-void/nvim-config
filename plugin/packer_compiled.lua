@@ -84,10 +84,20 @@ _G.packer_plugins = {
     path = "/home/nchhillar/.local/share/nvim/site/pack/packer/start/coc.nvim",
     url = "https://github.com/neoclide/coc.nvim"
   },
+  ["mini.icons"] = {
+    loaded = true,
+    path = "/home/nchhillar/.local/share/nvim/site/pack/packer/start/mini.icons",
+    url = "https://github.com/echasnovski/mini.icons"
+  },
   nerdtree = {
     loaded = true,
     path = "/home/nchhillar/.local/share/nvim/site/pack/packer/start/nerdtree",
     url = "https://github.com/preservim/nerdtree"
+  },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/home/nchhillar/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
